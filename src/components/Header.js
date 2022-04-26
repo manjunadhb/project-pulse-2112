@@ -2,9 +2,10 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 const Header = () => {
   let activeStyle = {
-  
-    backgroundColor: "#845EC2",
-    color: "white",
+    textDecoration: "underline",
+    textDecorationColor: "red",
+    // backgroundColor: "#845EC2",
+    color: "#2184A0",
   };
 
   return (
