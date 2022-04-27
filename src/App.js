@@ -14,6 +14,10 @@ import ManageTasks from "./components/ManageTasks";
 import ManageUsers from "./components/ManageUsers";
 import Ranking from "./components/Ranking";
 import Request from "./components/Request";
+import Presentation from "./ManageTaskComponents/Presentation";
+import CreateTask from "./ManageTaskComponents/CreateTask";
+import TaskReview from "./ManageTaskComponents/TaskReview";
+import ClassroomAttendance from "./ManageTaskComponents/ClassroomAttendance";
 // import { useNavigate } from "react-router-dom";
 // import React,{ useState } from "react";
 
@@ -29,7 +33,12 @@ function App() {
       <Route path="/adminmessages" element={<AdminMessages />}></Route>
       <Route path="/batchsummary" element={<BatchSummary />}></Route>
       <Route path="/feereport" element={<FeeReport />}></Route>
-      <Route path="/managetasks" element={<ManageTasks />}></Route>
+      <Route path="/managetasks" element={<ManageTasks />}>
+        <Route path ="/managetasks/presentation" element={<Presentation/>}></Route>
+        <Route path ="/managetasks/createTask" element={<CreateTask/>}></Route>
+        <Route path ="/managetasks/taskReview" element={<TaskReview/>}></Route>
+        <Route path ="/managetasks/classAttendance" element={<ClassroomAttendance/>}></Route>
+      </Route>
       <Route path="/manageusers" element={<ManageUsers />}></Route>
       <Route path="/ranking" element={<Ranking />}></Route>
       <Route path="/request" element={<Request />}></Route>
