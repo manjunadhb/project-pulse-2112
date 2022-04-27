@@ -9,14 +9,16 @@ const ManageTasks=()=>{
     return(
         <>
         <AdminHeader/>
+        <div>
         <h4>Create Task </h4>
-        <nav id="manageTaskNav">
-            <NavLink to="/managetasks/presentation"><Presentation/></NavLink>
-            <NavLink to="/managetasks/taskReview"><TaskReview></TaskReview></NavLink>
-            <NavLink to="/managetasks/createTask"><CreateTask></CreateTask></NavLink>
-            <NavLink to="/managetasks/classAttendance"><ClassroomAttendance></ClassroomAttendance></NavLink>
+        <nav className="manageTaskNav">
+            <NavLink to="/managetasks/presentation">Presentation</NavLink>
+            <NavLink to="/managetasks/taskReview">Task Review</NavLink>
+            <NavLink to="/managetasks/createTask">Create Task</NavLink>
+            <NavLink to="/managetasks/classAttendance">Classroom Attendance</NavLink>
         </nav>
      <Outlet/>
+      </div>
         </>
 
     )
