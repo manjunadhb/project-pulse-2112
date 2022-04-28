@@ -1,4 +1,5 @@
 import { Navbar,Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Admin = () => {
   return (
@@ -41,6 +42,7 @@ const Admin = () => {
             </NavDropdown>
             <Nav.Link href="#features">Settings</Nav.Link>
           </Nav>
+          <Link to="/" className="nav-link">Logout</Link>
         </Navbar.Collapse>
       </Navbar>
     </div>

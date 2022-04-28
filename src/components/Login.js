@@ -1,50 +1,31 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const student = {
-    email: "student210101@gmail.com",
-    password: "abc",
-  };
-  const admin = {
-    email: "pulseadmin@gmail.com",
-    password: "pulseadmin",
-  };
   const [data, setData] = useState({
     email: "",
     password: "",
   });
   const [loggedIn, setLoggedIn] = useState(true);
   let navigation = useNavigate();
-  const studentHandler = (e) => {
-    e.preventDefault();
-
-    
-      if (loggedIn) {
-        navigation("/home");
-      }
-    
-  };
-  const adminHandler = (e) => {
-    e.preventDefault();
-
-    if (loggedIn) {
-      navigation("/Admin");
-    }
-  };
 
   const changeHandler = (e) => {
-    // console.log(e.target.value)
     const name = e.target.name;
 
     const value = e.target.value;
-    console.log(value);
     setData({ ...data, [name]: value });
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    setLoggedIn(true);
+    const { email, password } = data;
+    if (email === "student210101@gmail.com" && password === "abc") {
+      setLoggedIn(true);
+      navigation("/home");
+    } else if (email === "pulseadmin@gmail.com" && password === "pulseadmin") {
+      setLoggedIn(true);
+      navigation("/admin");
+    }
   };
   return (
     <div className="col-4 offset-4 " style={{ marginTop: "12%" }}>
@@ -66,7 +47,10 @@ const Login = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Password</Form.Label>{" "}
+          <Link className="offset-6" to="/forget">
+            Forget password?
+          </Link>
           <Form.Control
             type="password"
             placeholder="Password"
@@ -75,18 +59,8 @@ const Login = () => {
             onChange={changeHandler}
           />
         </Form.Group>
-
-        <Button variant="primary" type="submit" onClick={studentHandler}>
-          Student
-        </Button>
-
-        <Button
-          className="mx-2"
-          variant="primary"
-          type="submit"
-          onClick={adminHandler}
-        >
-          Admin
+        <Button variant="primary" type="submit" onClick={submitHandler}>
+          LogIn
         </Button>
       </Form>
     </div>
