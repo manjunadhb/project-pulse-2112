@@ -36,11 +36,46 @@
   flex-wrap: wrap;
 
 }
+<<<<<<< HEAD
 #manageTaskNav a
+=======
+.manageTaskNav 
+>>>>>>> ba92c2409c124887c9010e3c7652a06d60cab690
 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 600px;
-  color:rgba(127, 255, 212, 0.314)
+  
 }
+.manageTaskNav a
+{ 
+  text-decoration: none;
+  color: rgb(93, 190, 190);
+}
+.btnPresentation
+{
+  background-color: rgba(4, 77, 145, 0.861);
+  border: 1px solid white;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  font-size: small;
+  font-style: normal;
+  
+}
+.divPresentation
+{
+  margin: 20px;
+}
+table
+{
+  border-collapse: collapse;
+  text-align: center;
+  border: 1.5px solid rgb(181, 181, 181);
+}
+th,td{width:150px;}
+tr:nth-child(even){background-color: rgba(128, 128, 128, 0.211);}
+th,td{border: 2px solid rgb(181, 181, 181);padding: 8px;}
+td{font-size: small;}
+#table1{background-color:rgba(170, 8, 8, 0.828); color:white ; padding: 8px;}
