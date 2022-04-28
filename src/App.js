@@ -18,6 +18,7 @@ import Presentation from "./ManageTaskComponents/Presentation";
 import CreateTask from "./ManageTaskComponents/CreateTask";
 import TaskReview from "./ManageTaskComponents/TaskReview";
 import ClassroomAttendance from "./ManageTaskComponents/ClassroomAttendance";
+import ForgetPassWord from "./components/ForetPassword";
 // import { useNavigate } from "react-router-dom";
 // import React,{ useState } from "react";
 
@@ -42,6 +43,7 @@ function App() {
       <Route path="/manageusers" element={<ManageUsers />}></Route>
       <Route path="/ranking" element={<Ranking />}></Route>
       <Route path="/request" element={<Request />}></Route>
+      <Route path="/forget" element={<ForgetPassWord />}></Route>
       <Route path="*" element={<PageNotFound />}></Route>
     </Routes>
   );
