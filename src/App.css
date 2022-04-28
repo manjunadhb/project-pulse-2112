@@ -36,7 +36,7 @@
   flex-wrap: wrap;
 
 }
-#manageTaskNav
+#manageTaskNav a
 {
   display: flex;
   flex-direction: row;
