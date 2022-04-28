@@ -1,5 +1,5 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   let activeStyle = {
     textDecoration: "underline",
@@ -41,18 +41,11 @@ const Header = () => {
           </NavLink>
 
           <NavDropdown title="More" id="basic-nav-dropdown" className="drop">
-            <NavDropdown.Item href="#action/3.1" className="text-dark">
-              Create a Request
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2" className="text-dark">
-              Apply Leave
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3" className="text-dark">
-              Curriculum
-            </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1" className="text-dark">Create a Request</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2" className="text-dark">Apply Leave</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3" className="text-dark">Curriculum</NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Link to="/" className="nav-link">Logout</Link>
       </Navbar>
     </>
   );

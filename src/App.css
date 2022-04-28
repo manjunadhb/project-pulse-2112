@@ -39,14 +39,9 @@ body{
   display: flex;
   justify-content: space-around;
   text-decoration: none;
-  flex-wrap: wrap;
 
 }
-<<<<<<< HEAD
-#manageTaskNav a
-=======
 .manageTaskNav 
->>>>>>> ba92c2409c124887c9010e3c7652a06d60cab690
 {
   display: flex;
   flex-direction: row;
