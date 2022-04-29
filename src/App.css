@@ -81,6 +81,10 @@ th,td{border: 2px solid rgb(181, 181, 181);padding: 8px;}
 td{font-size: small;}
 #table1{background-color:rgba(170, 8, 8, 0.828); color:white ; padding: 8px;}
 
+
+.topic{padding: 50px;}
+.topics{padding:50px; position:absolute; right:410px; bottom:262px; border: 1px solid gray;}
+
 .nav-link:enabled{
   
   border: 1px solid black;
@@ -120,6 +124,7 @@ tbody td{
 table{
   width: 100%;
 }
+
 form{
   text-align:start;
   border: 1px solid;
@@ -215,4 +220,6 @@ h1{
  .signup
  {
    background-color: rgb(45, 44, 44);
+
  }
+
