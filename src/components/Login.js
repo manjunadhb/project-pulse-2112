@@ -18,6 +18,12 @@ let navigation=useNavigate();
                  navigation("/Admin")
              }
 }
+const  signUpHandler = (e)=>{
+  e.preventDefault();
+  if(loggedIn){
+      navigation("/signup")
+  }
+}
 
 const changeHandler =(e)=>{
       console.log(e.target.value)
@@ -56,6 +62,14 @@ const changeHandler =(e)=>{
           onClick={adminHandler}
         >
           Admin
+        </Button>
+        <Button
+           className="mx-2"
+          variant="primary"
+          type="submit"
+          onClick={signUpHandler}
+        >
+          Sign Up
         </Button>
       </Form>
     </div>
