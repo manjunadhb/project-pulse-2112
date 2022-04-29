@@ -18,6 +18,7 @@ import Presentation from "./ManageTaskComponents/Presentation";
 import CreateTask from "./ManageTaskComponents/CreateTask";
 import TaskReview from "./ManageTaskComponents/TaskReview";
 import ClassroomAttendance from "./ManageTaskComponents/ClassroomAttendance";
+import SignUp from "./components/SignUp";
 // import { useNavigate } from "react-router-dom";
 // import React,{ useState } from "react";
 
@@ -25,6 +26,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />}></Route>
+      <Route path="/signup" element={<SignUp/>}></Route>
+
       <Route path="/Home" element={<Home />}></Route>
       <Route path="/dailystatusupdate" element={<DailyStatusUpdate />}></Route>
       <Route path="/messages" element={<Messages />}></Route>
