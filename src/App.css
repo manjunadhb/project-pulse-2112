@@ -74,3 +74,6 @@ tr:nth-child(even){background-color: rgba(128, 128, 128, 0.211);}
 th,td{border: 2px solid rgb(181, 181, 181);padding: 8px;}
 td{font-size: small;}
 #table1{background-color:rgba(170, 8, 8, 0.828); color:white ; padding: 8px;}
+
+.topic{padding: 50px;}
+.topics{padding:50px; position:absolute; right:410px; bottom:262px; border: 1px solid gray;}

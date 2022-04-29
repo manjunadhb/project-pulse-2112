@@ -1,4 +1,5 @@
 import React from 'react'
+import GetParticipants from '../Presentation/GetParticipants'
 
 
 
@@ -14,11 +15,25 @@ function Presentation() {
            <option>2109</option>
        </select>
      
-       <button className='btnPresentation'>Get Participants</button>
+       <button className='btnPresentation'> Get Participants </button>
        <button className='btnPresentation'>Choose Participant</button>
        <button className='btnPresentation'>Choose Topic</button>
        <button className='btnPresentation'>Review Presentation</button>
-       
+       <button className='btnPresentation'>Presentation History</button>
+       <div>
+         <br></br>
+         <br></br>
+         <table>
+            <h4 className='topic'>Participants Here</h4>
+         </table>
+           </div>
+       <br></br>
+       <br></br>
+       <div>
+         <table>
+           <h4 className='topics'>Topic Here</h4>
+         </table>
+       </div>
     </div>
   )
 }
