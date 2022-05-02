@@ -217,4 +217,99 @@ h1{
    background-color: rgb(45, 44, 44);
 
  }
-
+ .userHeading{
+   text-align: start;
+   color: rgb(135, 133, 133);
+ }
+.userNav{
+  color: rgb(246, 245, 245);
+  border: 0px solid rgb(236, 219, 219);
+}
+.userDashboard{
+  position: relative;
+  bottom: 10px;
+}
+.userManage{
+  position: relative;
+  bottom: 10px;
+}
+.userDashboard:hover{
+  border-bottom: 0.1px solid whitesmoke;
+}
+.userManage:hover{
+  border-bottom: 0.1px solid whitesmoke;
+}
+.userApp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+.userTable {
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+.user-td,.user-th{
+  border: 1px solid #ffffff;
+  text-align: start;
+  padding: 10px;
+  font-size: 32px;
+}
+.user-th{
+  background-color: rgb(117, 201, 250);
+}
+.user-td{
+  background-color: rgb(205, 235, 253);
+}
+.user-Form{
+  display: flex;
+  gap: 5px;
+}
+/* .user-Form .user-td:last-child{
+  display: flex;
+  justify-content: space-evenly;
+} */
+.user-Form *{
+  font-size: 20px;
+}
+.table-responsive {
+  margin: 2px 0;
+}
+.table-wrapper {
+min-width: 1000px;
+  background: #fff;
+  padding: 5px;        
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+  padding-bottom: 5px;
+  margin: 0 0 2px;
+}
+.row h1 {
+  margin: 5px 0 0;
+  font-size: 40px;
+  text-align: start;
+  border: 0px solid rgb(249, 190, 190);
+}
+.search-box {
+  position: relative;        
+  float: right;
+}
+.search-box input {
+  height: 34px;
+  border-radius: 20px;
+  padding-left: 35px;
+  border-color: #ddd;
+  box-shadow: none;
+}
+.search-box input:focus {
+border-color: #3FBAE4;
+}
+.search-box i {
+  color: #a0a5b1;
+  position: absolute;
+  font-size: 20px;
+  /* top: 8px; */
+  left: 10px;
+}
