@@ -5,6 +5,9 @@ const BatchSummary=()=>{
         <>
         <AdminHeader/>
      <h3>BatchSummary</h3>
+     <h3>BatchSummary</h3>
+     <h3>BatchSummary</h3>
+     <h3>BatchSummary</h3>
         </>
       
     )
